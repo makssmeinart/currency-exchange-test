@@ -1,7 +1,13 @@
-import React from 'react';
+import React from "react";
+import { Header, PageHolder } from "./f1-main/components";
 
 export const App = () => {
-  return <div>app</div>
-}
+  return (
+    <div>
+      <Header />
+      <PageHolder />
+    </div>
+  );
+};
 
 export default App;
