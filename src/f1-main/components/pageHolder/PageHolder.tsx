@@ -1,17 +1,18 @@
-import { Container } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import { routes } from "../../bll/routes/routes";
+import {Wrapper} from "./styles/styles";
+import {Exchange} from "../../../f2-pages/exchange/Exchange";
 
 export const PageHolder = () => {
   return (
-    <Container maxWidth={"xl"}>
+    <Wrapper maxWidth={"lg"}>
       <Routes>
-        <Route path={routes.exchange} element={<h1>Exchange Page</h1>} />
+        <Route path={routes.exchange} element={<Exchange />} />
         <Route
           path={routes.currencyDifference}
           element={<h1>Currency Difference</h1>}
         />
       </Routes>
-    </Container>
+    </Wrapper>
   );
 };
